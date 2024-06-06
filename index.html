@@ -1,10 +1,124 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Ujicoba Portfolio</title>
+        <title>Testing School Website</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        
+        <nav>
+            <div class="logo-icon" alt="logo">   
+                          
+            </div>
+            <section class="menu">
+                    <a class="nav-item" href="#home">Home</a>
+                    <a class="nav-item" href="#facilities">Our Facilities</a>
+                    <a class="nav-item" href="#message-us">Message Us</a>
+                    
+                </section>
+        </nav>
+
+        <hr>
+
+        <section class="section-container">
+            <!-- Home -->
+            <section id = "home">
+                <header>
+                    <h1>Welcome To Our School</h1>
+                </header>
+                <article>
+                    <p>where education meets fun!</p>
+                    <div class="banner-container">
+                        <div class="banner-img" style="background-image: url('assets/image5.jpg');"></div>
+                        <div class="banner-img" style="background-image: url('assets/image2.jpg');"></div>
+                        <div class="banner-img" style="background-image: url('assets/image3.jpg');"></div>
+                    </div>
+                </article>
+            </section>
+            <hr>
+
+            <!-- Our Facilities -->
+            <section id = "facilities">
+                    <header>
+                        <h1>Our Facilities</h1>
+                    </header>
+                    <article class="facilities-list">
+                        <div>
+                            <div style="width:100px;height:100px; flex:3; border:1px solid black;border-radius: 50%;background-image: url('assets/image6.jpg');background-size: cover;"></div>
+                            <h5>Basketball Court</h5>
+                        </div>
+
+                        <div>
+                            <div style="width:100px;height:100px; border:1px solid black;border-radius: 50%;background-image: url('assets/image4.jpg'); background-size:cover;"></div>
+                            <h5>Computer Lab</h5>
+                        </div>
+
+                        <div">
+                            <div style="width:100px;height:100px; border:1px solid black;border-radius: 50%;background-image: url('assets/image7.jpg'); background-size:cover;"></div>
+                            <h5>Auditorium</h5>
+                        </div>
+                    </article>
+            </section>
+            <hr>
+
+            <!-- Message Us -->
+            <section id= "message-us">
+                <header>
+                    <h1>Message Us</h1>
+                </header>
+
+                <section class="message-us-section">
+                    <!-- Form -->
+                    <section>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td><label>Name:</label></td>
+                                    <td><input id="name-input" placeholder="name" type="text" required /></td>
+                                <!-- <button type ="button" onClick = "nextSlide(1)">Send Form</button> -->
+                                </tr>
+
+                                <tr>
+                                    <td><label>Tanggal Lahir:</label></td>
+                                    <td><input id="date-input" type="date" name="birth-date" required /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label>Jenis Kelamin:</label></td>
+                                    <td>
+                                        <input type="radio" id="male" name ="gender" value = "male" checked =true />
+                                        <label for="male">Laki-laki</label>
+                                        <input type="radio" id="female" name ="gender" value = "female" />
+                                        <label for="female">Perempuan</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label>Pesan:</label></td>
+                                    <td><textarea id= "msg-input" placeholder="pesan" name="message"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type ="submit" value ="Submit" onclick="writeContent()" /></td>
+                                <tr>
+                            </table>
+                        </form>
+                    </section>
+
+                    <!-- Result -->
+                    <section class="result-container">
+                        <div class="form-result">
+                            <p id="textResult">
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    
+        <footer>
+
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
